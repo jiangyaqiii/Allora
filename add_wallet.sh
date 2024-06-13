@@ -12,6 +12,7 @@ go version
 #安装allora钱包
 git clone -b <latest-release-tag> https://github.com/allora-network/allora-chain.git
 cd allora-chain && make all
+export PATH=$PATH:/root/.local/bin
 allorad version
 
 #创建钱包

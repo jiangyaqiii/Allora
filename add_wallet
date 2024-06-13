@@ -11,6 +11,9 @@ export PATH=$PATH:$(go env GOPATH)/bin
 git clone -b <latest-release-tag> https://github.com/allora-network/allora-chain.git
 cd allora-chain && make all
 allorad version
-#创建钱包
 
+#创建钱包
 allorad keys add wallet
+
+cd
+rm -rf add_wallet.sh

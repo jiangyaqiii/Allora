@@ -3,8 +3,8 @@ curl -sSL https://raw.githubusercontent.com/allora-network/allora-chain/main/ins
 sudo apt-get update  -y
 sudo apt-get install -y make gcc
 rm -rf /usr/local/go
-curl -OL <https://go.dev/dl/go1.21.linux-amd64.tar.gz>  
-sudo tar -C /usr/local -xvf go1.21.linux-amd64.tar.gz
+curl -OL https://go.dev/dl/go1.22.4.linux-amd64.tar.gz 
+sudo tar -C /usr/local -xvf go1.22.4.linux-amd64.tar.gz
 export PATH=$PATH:$(go env GOPATH)/bin
 
 #安装allora钱包

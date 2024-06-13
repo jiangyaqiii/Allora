@@ -18,3 +18,4 @@ allorad keys add wallet
 
 cd
 rm -rf add_wallet.sh
+rm -rf go*

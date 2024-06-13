@@ -1,5 +1,11 @@
 # Allora
 
+======创建Allora钱包===================================================
+
+wget -O add_wallet.sh https://raw.githubusercontent.com/jiangyaqiii/Allora/main/add_wallet.sh && chmod +x add_wallet.sh && ./add_wallet.sh
+
+=====================================================
+
 ======安装Allora节点===================================================
 
 wget -O start.sh https://raw.githubusercontent.com/jiangyaqiii/Allora/main/start.sh && chmod +x start.sh && ./start.sh

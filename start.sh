@@ -29,7 +29,7 @@ if ! command -v docker &> /dev/null
 
     # 授权 Docker 文件
     sudo chmod a+r /etc/apt/keyrings/docker.gpg
-    sudo apt-get update
+    sudo apt-get update -y
 
     # 安装 Docker 最新版本
     sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y

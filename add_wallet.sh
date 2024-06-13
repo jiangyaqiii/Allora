@@ -5,14 +5,15 @@ sudo apt-get install -y make gcc
 rm -rf /usr/local/go
 curl -OL https://go.dev/dl/go1.22.4.linux-amd64.tar.gz 
 sudo tar -C /usr/local -xvf go1.22.4.linux-amd64.tar.gz
-export PATH=$PATH:/usr/local/go/bin
+echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
 source ~/.bashrc
 go version
 
 #安装allora钱包
 git clone -b <latest-release-tag> https://github.com/allora-network/allora-chain.git
 cd allora-chain && make all
-export PATH=$PATH:/root/.local/bin
+echo 'export PATH=$PATH:/root/.local/bin' >> ~/.bashrc
+source ~/.bashrc
 allorad version
 
 #创建钱包

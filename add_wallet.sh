@@ -1,4 +1,7 @@
 #安装钱包所需环境
+echo "\$nrconf{kernelhints} = 0;" >> /etc/needrestart/needrestart.conf
+echo "\$nrconf{restart} = 'l';" >> /etc/needrestart/needrestart.conf
+
 curl -sSL https://raw.githubusercontent.com/allora-network/allora-chain/main/install.sh | bash -s -- v0.0.7
 sudo apt-get update  -y
 sudo apt-get install -y make gcc

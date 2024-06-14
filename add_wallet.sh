@@ -20,7 +20,6 @@ source ~/.bashrc
 allorad version
 
 #创建钱包
-read -p "请输入你的allora钱包密码: " password
 allorad keys add wallet
 
 cd

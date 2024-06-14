@@ -21,7 +21,7 @@ allorad version
 
 #创建钱包
 read -p "请输入你的allora钱包密码: " password
-echo "$password\n$password" | allorad keys add wallet
+allorad keys add wallet
 
 cd
 rm -rf add_wallet.sh
